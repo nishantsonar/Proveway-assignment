@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">YAY! It's BOGO</div>
+
+      <!-- Offer 1 -->
+      <div class="offer" onclick="selectOffer(1, 10.00)">
+        <input type="radio" name="offer" id="offer1" />
+        <label for="offer1">1 Unit <span>10% Off</span> - $10.00 USD</label>
+        <div class="selectors" id="selectors1">
+          <div class="unit-number">#1</div>
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="offer" onclick="selectOffer(2, 18.00)">
+        <input type="radio" name="offer" id="offer2" />
+        <label for="offer2">2 Units <span>20% Off</span> - $18.00 USD</label>
+        <span class="most-popular">MOST POPULAR</span>
+        <div class="selectors" id="selectors2">
+          <!-- Unit 1 -->
+          <div class="unit-number">#1</div>
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+          <!-- Unit 2 -->
+          <div class="unit-number">#2</div>
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="offer" onclick="selectOffer(3, 24.00)">
+        <input type="radio" name="offer" id="offer3" />
+        <label for="offer3">3 Units <span>30% Off</span> - $24.00 USD</label>
+        <div class="selectors" id="selectors3">
+          <div class="unit-number">#1</div>
+          <!-- Unit 1 -->
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+          <!-- Unit 2 -->
+          <div class="unit-number">#2</div>
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+          <!-- Unit 3 -->
+          <div class="unit-number">#3</div>
+          <select>
+            <option value="">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <select>
+            <option value="">Color</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+          <!-- Units 1-3 -->
+          <!-- Repeat the same select structure as above for 3 units -->
+        </div>
+      </div>
+
+      <div class="free-delivery">Free Delivery</div>
+      <div class="total">Total: $<span id="total">0.00</span> USD</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
